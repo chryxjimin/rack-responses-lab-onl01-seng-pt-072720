@@ -4,7 +4,7 @@ class Application
     return [ 200, {'Content-Type' => 'text/html'}, has_key ]
   end
 
-  def call(env)
+  def has_key
     (Time.now.hour < 12)? ["Good Morning!"] : ["Good Afternoon!"]
   end
 end
