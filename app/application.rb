@@ -5,6 +5,6 @@ class Application
   end
 
   def has_key
-    (Time.now.hour < 12?) ?  ["Good Morning!"] : ["Good Afternoon!"]
+     middle_of_day ?  ["Good Morning!"] : ["Good Afternoon!"]
   end
 end
