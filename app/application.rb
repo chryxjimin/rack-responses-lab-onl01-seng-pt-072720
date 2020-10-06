@@ -6,5 +6,6 @@ class Application
 
   def has_key
     (Time.now.hour < 12) ? ["Good Morning!"] : ["Good Afternoon!"]
+    binding.pry
   end
 end
